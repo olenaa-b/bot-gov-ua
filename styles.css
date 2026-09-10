@@ -336,7 +336,7 @@ h1 {
 .button-secondary2 {
   color: var(--ink);
   background: #fff;
-  border-color: var(--line);
+  border-color: #aeb5bf;
   padding: 5px 25px;
   border-radius: 10px;
   
