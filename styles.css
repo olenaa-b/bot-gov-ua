@@ -467,11 +467,13 @@ h1 {
 }
 
 .misto-visual img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-    object-position: center;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  transform: none;
 }
 
 .category-nav {
@@ -899,7 +901,7 @@ h1 {
   }
 
   .misto-visual img {
-    object-position: center 555%;
+    object-position: center;
   }
 
   .category-nav {
