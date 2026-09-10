@@ -419,10 +419,11 @@ h1 {
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
+  margin-top: 18px;
 }
 
 .store-button {
-  min-height: 36px;
+  min-height: 48px;
   display: inline-flex;
   align-items: center;
   text-decoration: none;
@@ -437,7 +438,7 @@ h1 {
 .store-button img {
   display: block;
   width: auto;
-  height: 36px;
+  height: 48px;
   margin: 0;
 }
 
@@ -465,6 +466,24 @@ h1 {
   position: relative;
   min-width: 0;
   overflow: hidden;
+}
+
+.misto-visual::before {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 110px;
+  content: "";
+  background: linear-gradient(
+    90deg,
+    #f3faff 0%,
+    rgba(243, 250, 255, 0.92) 28%,
+    rgba(243, 250, 255, 0.55) 58%,
+    rgba(243, 250, 255, 0) 100%
+  );
+  pointer-events: none;
 }
 
 .misto-visual img {
@@ -890,7 +909,7 @@ h1 {
 
   .misto-actions {
     gap: 10px;
-    margin-top: 4px;
+    margin-top: 16px;
   }
 
   .misto-visual {
@@ -898,6 +917,21 @@ h1 {
     aspect-ratio: 4 / 3;
     background: #dceffc;
     border-top: 1px solid rgba(23, 112, 200, 0.16);
+  }
+
+  .misto-visual::before {
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: 0;
+    width: auto;
+    height: 64px;
+    background: linear-gradient(
+      180deg,
+      #f3faff 0%,
+      rgba(243, 250, 255, 0.82) 35%,
+      rgba(243, 250, 255, 0) 100%
+    );
   }
 
   .misto-visual img {
